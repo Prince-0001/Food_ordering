@@ -1,0 +1,79 @@
+
+.navbar{
+    flex-direction: column;
+}
+.navbar ul a{
+    padding:2px 15px;
+    margin:2px 0px;
+    font-size: 1rem;
+}
+
+
+.home{
+    height: 250px;
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    justify-content: none;
+    align-items: none;
+
+}
+
+.home::before{
+    height:350px ;
+}
+.home h1{
+   font-size: 1.8rem;
+}
+.home p{
+    font-size: 0.5rem;
+}
+
+
+.services h1{
+    font-size:1.8rem;
+}
+.cards{
+    font-size: 0.5rem;
+}
+.cards h3{
+    font-size:1.2rem;
+}
+
+
+.items{
+    flex-direction: column;
+    margin:6px 2px;
+    height:auto ;
+}
+
+.clients h1{
+    font-size: 1.8rem;
+}
+.clients_logo{
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.clients_logo img{
+    margin:0px;
+    height:3rem ;
+    width:5rem;
+    padding:5px 6px;
+}
+
+.contact form input{
+    width:15rem;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    height: 18px;
+}
+.contact form textarea{
+    width: 15rem;
+    height: 4rem;
+}
+
+.contact h1{
+    font-size:1.8rem;
+}

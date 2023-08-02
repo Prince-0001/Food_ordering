@@ -1,0 +1,238 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    position:sticky;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    /* border:2px solid orangered; */
+   
+}
+.navbar::before{
+    content: "";
+    background: black;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+.logo img{
+    height: 60px;
+    border-radius: 50px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    padding:5px 25px;
+    margin:3px 15px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar ul a:hover{
+    background:white;
+    color:black;
+    border-radius:13px;
+}
+
+
+/* home section */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    margin:10px 233px ;
+    padding:10px ;
+    /* border:2px solid green */
+}
+.home::before{
+    content: "";
+    background: url(img/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    width: 100%;
+    height:20rem;
+    opacity: 0.9;
+}
+.home h1{
+    font-size:2.8rem;
+    margin-bottom: 5px;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+}
+.home p{
+    text-align: center;
+    font-size:0.8rem;
+    color:white;
+    font-family: 'Inter', sans-serif;
+}
+.btn{
+    margin:15px;
+    font-size:1.5rem;
+    background-color: brown;
+    color:white;
+    border-radius: 10px;
+    padding:3px 20px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+
+}
+.btn:hover{
+    color:black;
+}
+
+
+/* services */
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    margin-top: 25px;
+
+}
+.services h1{
+    font-size: 2.4rem;
+    margin:10px;
+    font-family: 'Oswald', sans-serif;
+}
+.items{
+    display: flex;
+    /* border:2px solid yellow; */
+    justify-content: center;
+    height: 18rem;
+    margin: 5px 15px;
+
+}
+.items img{
+    width: 10rem;
+    height: 8rem;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgb(250, 246, 246);
+    border:2px solid brown;
+    margin:2px 25px;
+    padding:5px 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    
+}
+.cards h3{
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* clients */
+
+.clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:2px purple solid; */
+    margin-top: 15px;
+    position: relative;
+
+}
+.clients::before{
+    content: "";
+    position: absolute;
+    background: url(./img/bg.jpg) no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.clients h1{
+    font-size: 2.4rem;
+    margin:10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.clients_logo{
+    display: flex;
+}
+
+.clients_logo img{
+    width:8rem ;
+    height: 5rem;
+    margin:10px 30px;
+    padding:12px 13px;
+}
+
+/* contact */
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    /* border:2px solid brown; */
+    align-items: center;
+    position: relative;
+}
+.contact::before{
+    content: "";
+    background: url(./img/contact.jpg) center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.4;
+}
+.contact h1{
+    font-size: 2.4rem;
+    margin:10px;
+    font-family: 'Oswald', sans-serif;
+}
+.contact form h4{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+.contact form input{
+    width:30rem;
+    margin-top:5px;
+    margin-bottom: 10px;
+    padding:2px 5px;
+    height:25px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+}
+.contact form textarea{
+    height: 8rem;
+    width: 30rem;
+    padding:2px 5px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+}
